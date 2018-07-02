@@ -182,9 +182,6 @@ a {
   @media (max-width: 720px) {
     .work {
       padding-top: 55px; } }
-  @media (max-width: 520px) {
-    .work {
-      padding-top: 100px; } }
   .work .container {
     width: 80%;
     margin: auto;
