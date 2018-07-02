@@ -25,4 +25,6 @@ $(document).ready(function () {
         $('.nav__menuButtonItem').toggleClass('color');
 
     })
+    
+    
 });

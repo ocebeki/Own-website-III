@@ -372,7 +372,8 @@ a {
   background: #fff;
   position: relative; }
   .contact canvas {
-    background-color: #fff; }
+    background-color: #fff;
+    position: absolute; }
   .contact__mail {
     position: absolute;
     top: 50%;
