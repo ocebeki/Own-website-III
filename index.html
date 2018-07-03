@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/about.css">
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="icon" type="image/png" href="img/NUMBER%206.png">
+    <link rel="icon" type="image/png" href="img/logo.png">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,9 +20,14 @@
 </head>
 
 <body>
-    <div class="nav__navBar" id="navbar">
-        <div class="nav__homeButton" id="top">
-        </div>
+    <div class="loaderWrapper">
+        <div class="loaderWrapper__loader"></div>
+    </div>
+    <div class="nav" id="navbar">
+        <a href="#about">
+            <div class="nav__homeButton">
+            </div>
+        </a>
         <div class="nav__menuButton">
             <div class="nav__menuButtonWrapper">
                 <span class="nav__menuButtonItem"></span>
@@ -70,18 +75,15 @@
                     </p>
             </div>
         </div>
-
-
         <div class="about__name">
             <p> @ Pawel Dolinski </p>
         </div>
     </section>
-    <section class="work panel" id="work">
+    <div id="work"></div>
+    <section class="work panel">
         <div class="container">
             <h1>WORK</h1>
-
             <div class="work__wrapper">
-
                 <div class="work__slider">
                     <div class="work__sliderItem">
                         <img src="img/apollo.jpg">
@@ -220,38 +222,38 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="work__icons">
-            <div class="work__iconsBox">
-                <i class="devicon-html5-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-css3-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-sass-original"></i>
-            </div>
+            <div class="work__icons">
+                <div class="work__iconsBox">
+                    <i class="devicon-html5-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-css3-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-sass-original"></i>
+                </div>
 
-            <div class="work__iconsBox">
-                <i class="devicon-javascript-plain"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-jquery-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-bootstrap-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-wordpress-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-git-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-bitbucket-plain-wordmark"></i>
-            </div>
-            <div class="work__iconsBox">
-                <i class="devicon-photoshop-plain"></i>
+                <div class="work__iconsBox">
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-wordpress-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-git-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-bitbucket-plain-wordmark"></i>
+                </div>
+                <div class="work__iconsBox">
+                    <i class="devicon-photoshop-plain"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -275,6 +277,7 @@
     <script language="JavaScript" type="text/javascript" src="script/background.js"></script>
     <script language="JavaScript" type="text/javascript" src="script/backgroundMobile.js"></script>
     <script language="JavaScript" type="text/javascript" src="script/script.js"></script>
+    <script language="JavaScript" type="text/javascript" src="script/smoothScrolling.js"></script>
     <script language="JavaScript" type="text/javascript" src="script/plugins/slider/slick.js"></script>
     <script language="JavaScript" type="text/javascript" src="script/scrollMagicClassToggle.js"></script>
     <script language="JavaScript" type="text/javascript" src="script/plugins/scrollMagic/ScrollMagic.min.js"></script>

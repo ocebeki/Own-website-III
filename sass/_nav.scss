@@ -8,6 +8,11 @@
         font-family: 'Rajdhani', sans-serif;
     }
     .nav {
+        a {
+            color: #000;
+            text-decoration: none;
+            z-index: 101;
+        }
         &__nav {
             position: absolute;
             top: 0;
@@ -51,7 +56,6 @@
                     margin-top: 5px;
                 }
                 @media (max-width: 760px) {
-                    
                     font-size: 35px;
                 }
                 @media (max-width: 677px) {
@@ -65,22 +69,17 @@
                     margin-top: 7px;
                 }
             }
-            a {
-                color: #000;
-                text-decoration: none;
-            }
             &.open {
                 height: 62px;
                 -webkit-transition: 1s;
                 transition: 1s;
-            @media (max-width: 677px) {
-                height: 42px;
-                  
+                @media (max-width: 677px) {
+                    height: 42px;
                 }
             }
         }
         &__homeButton {
-            background: url(../img/NUMBER%206.png);
+            background: url(../img/logo.png);
             background-size: cover;
             display: inline-block;
             margin-left: 10px;
@@ -121,7 +120,6 @@
             @media (max-width: 677px) {
                 right: 0;
                 margin-top: 5px;
-                
             }
         }
         &__menuButtonWrapper {
@@ -131,7 +129,7 @@
             opacity: 0;
             -webkit-transition: 1s;
             transition: 1s;
-            &:hover .home__menuButtonItem {
+            &:hover .nav__menuButtonItem {
                 &:nth-child(1) {
                     -webkit-transform: translatey(-5px);
                     transform: translatey(-5px);

@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+    $(".loaderWrapper").fadeOut();
+});
 $(document).ready(function () {
 
     setTimeout(function () {
@@ -7,24 +10,26 @@ $(document).ready(function () {
     setTimeout(function () {
         $('.about__name').addClass('borderName');
     }, 2000);
-        setTimeout(function () {
+    setTimeout(function () {
         $('.aboutMobile__name').addClass('borderName');
     }, 2000);
+
 
     $('.nav__menuButton').click(function () {
         $('.nav__nav').toggleClass('open');
         $('.nav__menuButtonItem').toggleClass('active');
         $('.nav__menuButtonItem').toggleClass('color');
-    
+
+
 
     })
+
 
     $('.nav__nav li').click(function () {
         $('.nav__nav').toggleClass('open');
-        $('.nav__menuButtonItem').toggleClass('active');
         $('.nav__menuButtonItem').toggleClass('color');
+        $('.nav__menuButtonItem').toggleClass('active');
+
 
     })
-    
-    
 });

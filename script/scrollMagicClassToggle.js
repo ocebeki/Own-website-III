@@ -28,13 +28,7 @@ $(document).ready(function () {
     	new ScrollMagic.Scene({triggerElement: ".contact"})
 					.setClassToggle(".nav__menuButtonItem", "color")
 					.addTo(controller);
-//        new ScrollMagic.Scene({triggerElement: ".work"})
-//					.setClassToggle(".work__iconsBox:nth-child(odd)", "fadeInLeftBig")
-//					.addTo(controller);
-//        new ScrollMagic.Scene({triggerElement: ".work"})
-//					.setClassToggle(".work__iconsBox:nth-child(even)", "fadeInRightBig")
-//					.addTo(controller);
-//    
+   
     new ScrollMagic.Scene({triggerElement: ".work"})
 					.setClassToggle(".work__iconsBox", "bounceIn")
 					.addTo(controller);

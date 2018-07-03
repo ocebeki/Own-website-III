@@ -1,7 +1,7 @@
 .work {
     &__icons {
         position: absolute;
-        bottom: 140px;
+        bottom: -120px;
         left: 50%;
         transform: translatex(-50%);
         display: -webkit-box;
@@ -11,6 +11,12 @@
         -ms-flex-pack: center;
         justify-content: center;
         transition: .5s;
+    @media (max-width: 1266px) {
+        bottom: -150px;
+    }
+    @media (max-width: 330px) {
+        bottom: -100px;
+    }
     }
     &__iconsBox {
         margin: 10px;
